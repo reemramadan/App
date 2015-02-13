@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+
+<body>
+ 
+	<div data-role="page" id="pageone">
+		 <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#myPopup"  data-rel="popup" class="ui-btn ui-icon-search ui-btn-right ui-btn-icon-right ui-btn-icon-notext ui-corner-all">Search</a>
+			<h1>AUB Mobile App</h1>
+			<div data-role="navbar">
+				<ul>
+				  <li><a href="#pageone" class="ui-btn-active">Lost and Found</a></li>
+				  <li><a href="#pagetwo" data-transition="slide">Book Exchange</a></li>
+				</ul>
+			</div>
+		 </div>
+		 
+		<div data-role="popup" id="myPopup" class="ui-content" style="min-width:100px;">
+			<div data-role="fieldcontain">
+				<label for="select-choice-1" class="select">Searching in:</label>
+				<select name="select-choice-1" id="select-choice-1">
+					<option value="lostandfound">Lost and Found</option>
+					<option value="bookex">Book Exchange</option>
+					<option value="people">People</option>
+				</select>
+			</div>
+			<form method="post" action="demoform.asp">
+			  <div class="ui-field-contain">
+				<input type="search" name="search" id="search" placeholder="Search for content...">
+			  </div>
+			  <input type="submit" data-inline="true" value="Search">
+			</form> 
+			
+		</div>
+
+
+		 <div data-role="main" class="ui-content">
+			<p>Was lost, now found</p>
+		 </div>
+		 
+		<div data-role="footer" data-theme="b" data-position="fixed" data-id="footer">
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:3%">Home</a>
+			<a href="postlost.html" class="ui-btn ui-icon-edit ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:23%">Post</a>
+			<a href="messaging.html" class="ui-btn ui-icon-comment ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:23%">Messaging</a>
+		</div>
+	</div>
+		
+	 
+	 <div data-role="page" id="pagetwo">
+	 
+		<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#myPopup"  data-rel="popup" class="ui-btn ui-icon-search ui-btn-right ui-btn-icon-right ui-btn-icon-notext ui-corner-all">Search</a>
+				<h1>AUB Mobile App</h1>
+				<div data-role="navbar">
+					<ul>
+					  <li><a href="#pageone" data-transition="slide" data-direction="reverse">Lost and Found</a></li>
+					  <li><a href="#pagetwo" class="ui-btn-active">Book Exchange</a></li>
+					</ul>
+			  </div>
+		</div>
+			 
+		<div data-role="popup" id="myPopup" class="ui-content" style="min-width:100px;">
+			<form method="post" action="demoform.asp">
+			  <div class="ui-field-contain">
+				<input type="search" name="search" id="search" placeholder="Search for content...">
+			  </div>
+			  <input type="submit" data-inline="true" value="Search">
+			</form> 
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p>Buy a book</p>
+		</div>
+		
+		<div data-role="footer" data-theme="b" data-position="fixed" data-id="footer">
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:3%">Home</a>
+			<a href="postex.html" class="ui-btn ui-icon-edit ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:23%">Post</a>
+			<a href="messaging.html" class="ui-btn ui-icon-comment ui-btn-inline ui-btn-icon-right ui-btn-icon-notext ui-corner-all" style="margin-left:23%">Messaging</a>
+		</div>
+	 </div>
+</body>
+</html>

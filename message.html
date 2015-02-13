@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+	
+	div.you
+	{
+	  margin-left: 30%;
+	  background-color: rgba(0, 0, 200, 0.3);
+	  border-radius:10px; 
+	}
+	div.you p
+	{
+	  margin: 5%;
+	  color: #000
+	}
+	
+	div.them
+	{
+		margin-right: 30%;
+		background-color: rgba(128, 128, 128, 0.3);
+		border-radius:10px;
+	}
+	
+	div.them p
+	{	
+		margin:5%;
+		color:#000
+	}
+</style>
+
+</head>
+
+
+<body>
+	
+	
+<div data-role="page">
+	<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+		<a href="#popup" class="ui-btn ui-icon-search ui-btn-right ui-btn-icon-right ui-btn-icon-notext ui-corner-all">Search</a>
+		<h1>AUB Mobile App</h1>
+	</div>
+	<div data-role="popup" id="popup">
+		<p>This is a simple popup.</p>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p><b>John Doe</b></p>
+		<div class="you">
+			<p> This is a message sent by you. </p>
+		</div>
+		
+		<div class="them">
+			<p>This is a message sent by them. </p>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
